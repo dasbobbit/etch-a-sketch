@@ -41,7 +41,7 @@ dimBar.addEventListener('change', () => {
 dimBar.addEventListener('input', () => dimValue.textContent = dimBar.value); 
 
 // Reset grid when Reset button clicked
-resetBtn.addEventListener('click', () => createGrid(dim));
+resetBtn.addEventListener('click', () => createGrid(dimBar.value));
 
 // Change color when color button clicked
 colorBtns.forEach(colors => {
