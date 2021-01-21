@@ -1,0 +1,136 @@
+html {
+    font-family: Georgia, sans-serif;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 700;
+}
+html, button {
+    font-family: Georgia, sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+}
+h1 {
+    text-align: center;
+    font-size: 2em;
+    font-weight: 800;
+    letter-spacing: -3px;
+    margin: 10px 0 10px 0;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    background-image: url("images/spiration\ dark.png");
+    margin: 0;
+    height: 100vh;
+}
+.content {
+    padding: 0 0 20px 0;
+    width: 70vw;
+    max-width: 600px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    align-content: space-between;
+    flex-wrap: wrap;
+}
+#solid-colors {
+    flex-grow: 1;
+}
+#solid-colors button:hover {
+    transform: scale(1.2);
+}
+#pixel-color {
+    /* flex-grow: 1; */
+    display: flex;
+    align-items: center;
+}
+#pixel-color p {
+    margin: 0 auto;
+    margin-right: 10px;
+}
+#pixel-color-choice {
+    height: 40px;
+    width: 40px;
+    border: none;
+    padding: none;
+}
+#solid-colors {
+    display: flex;
+    flex-grow: 1;
+}
+#solid-colors button {
+    margin-right: 10px;
+    height: 40px;
+    width: 40px;
+}
+#red {background-color: red;}
+#green {background-color: green;}
+#blue {background-color: blue;}
+#yellow {background-color: yellow;}
+#dimensionBar {
+    width: 50%;
+    height: 50px;
+    justify-content: space-evenly;
+    align-content: center;
+}
+#container {
+    display: grid;
+    width: 65vw;
+    height: 65vw;
+    margin: 0 auto 15px auto;
+    border: 10mm ridge rgb(161, 43, 88);
+    max-width: 550px;
+    max-height: 550px;
+}
+.pixel {
+    display: inline-block;
+    background-color: rgb(212, 212, 212);
+    border: solid 0.1px rgba(0, 0, 0, 0.058);
+}
+#slider-container {
+    flex: 1 1 auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+#slider-container p {
+    margin: 5px auto;
+}
+#dimensionBar {
+    -webkit-appearance: none;   /* Hides the slider so that custom slider can be made */
+    width: 90%;    /* Specific width is required for Firefox. */
+    background: transparent;    /* Otherwise white in Chrome */
+    height: 10px;
+    background-color: rgb(161, 43, 88);
+}
+#dimensionBar::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    border: 1px solid #000;
+    height: 30px;
+    width: 15px;
+    background: #fff;
+
+    /* box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d; */
+}
+#dimensionBar::-webkit-slider-thumb:hover {
+    transform: scale(1.2);
+}
+#dimensionBar:focus {
+    outline: none;  /* Removes the blue border. */
+}
+#dimensionBar::-webkit-slider-runnable-track  {
+    width: 100%;
+    cursor: pointer; 
+    /* Hides the slider so custom styles can be added */
+    background: transparent; 
+    border-color: transparent;
+    color: transparent;
+}
+#reset-btn {
+    flex: 1 1 auto;
+    margin-right: 10px;
+    height: 50px;
+    max-width: 100px;
+    background-color: rgb(161, 43, 88);
+}
