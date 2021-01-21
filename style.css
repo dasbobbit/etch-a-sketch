@@ -3,6 +3,7 @@ html {
     color: #fff;
     font-size: 25px;
     font-weight: 700;
+    cursor: default;
 }
 html, button {
     font-family: Georgia, sans-serif;
@@ -15,6 +16,7 @@ h1 {
     font-weight: 800;
     letter-spacing: -3px;
     margin: 10px 0 10px 0;
+    cursor: default;
 }
 body {
     display: flex;
@@ -36,9 +38,14 @@ body {
 }
 #solid-colors {
     flex-grow: 1;
+    border-radius: 7px;
+}
+#solid-colors button {
+    border-radius: 7px;
 }
 #solid-colors button:hover {
     transform: scale(1.2);
+    cursor: pointer; 
 }
 #pixel-color {
     /* flex-grow: 1; */
@@ -50,6 +57,13 @@ body {
     margin-right: 10px;
 }
 #pixel-color-choice {
+    height: 40px;
+    width: 40px;
+    border: none;
+    padding: none;
+    border-radius: 7px;
+}
+#pixel-color-choice:hover {
     height: 40px;
     width: 40px;
     border: none;
@@ -83,6 +97,9 @@ body {
     max-width: 550px;
     max-height: 550px;
 }
+#container:hover {
+    cursor: cell;
+}
 .pixel {
     display: inline-block;
     background-color: rgb(212, 212, 212);
@@ -110,18 +127,23 @@ body {
     height: 30px;
     width: 15px;
     background: #fff;
+    border-radius: 7px;
 
     /* box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d; */
 }
 #dimensionBar::-webkit-slider-thumb:hover {
     transform: scale(1.2);
+    cursor: grab;
+}
+#dimensionBar::-webkit-slider-thumb:hover {
+    transform: scale(1.2);
+    cursor: ew-resize;
 }
 #dimensionBar:focus {
     outline: none;  /* Removes the blue border. */
 }
 #dimensionBar::-webkit-slider-runnable-track  {
     width: 100%;
-    cursor: pointer; 
     /* Hides the slider so custom styles can be added */
     background: transparent; 
     border-color: transparent;
@@ -133,4 +155,6 @@ body {
     height: 50px;
     max-width: 100px;
     background-color: rgb(161, 43, 88);
+    cursor: pointer; 
+    border-radius: 7px;
 }
